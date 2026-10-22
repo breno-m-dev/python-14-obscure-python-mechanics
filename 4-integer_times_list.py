@@ -1,4 +1,7 @@
 a = 3 * [1, 3]
+# print(3.2*[1,2]) # <- TypeError: can't multiply sequence by non-int of
+# type 'float'
+
 print(a) # <- [1, 3, 1, 3, 1, 3]
 print(f"id(a[0]):{id(a[0])}")
 print(f"id(a[1]):{id(a[1])}")

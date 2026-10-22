@@ -1,0 +1,19 @@
+def make_funcs1():
+
+    return [lambda : i for i in range(3)]
+
+
+funcs = make_funcs1()
+
+print([f() for f in funcs])
+
+
+
+def make_funcs2():
+
+    return [lambda parametro = valor: parametro for valor in range(3)]
+
+
+funcs = make_funcs2()
+
+print([f() for f in funcs])
